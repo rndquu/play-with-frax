@@ -38,7 +38,7 @@ contract FraxTest is Test {
 
     function setUp() public {
         // fork mainnet
-        vm.createSelectFork('https://eth.llamarpc.com');
+        vm.createSelectFork('https://mainnet.gateway.tenderly.co');
 
         // add 1000 LUSD to user
         deal(address(lusdToken), user, 1000e18);
